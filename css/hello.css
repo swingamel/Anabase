@@ -1,0 +1,605 @@
+body {
+    float: none;
+    background-image: url('../images/vecteezypurple-background-liquidep0621_generated.jpg');
+}
+
+@font-face {
+    font-family: "Evolve";
+    src: url('font/EVOLVE.ttf');
+}
+
+@font-face {
+    font-family: "Luna";
+    src: url('font/Luna.ttf');
+}
+
+
+/* ----------- MENU ----------- */
+
+.entete a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 35px;
+    position: relative;
+    left: 890px;
+    bottom: -20px;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    font-family: 'Evolve';
+}
+
+.entete ul a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 4px;
+    width: 0;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.entete ul a:hover:after {
+    width: 90%;
+    background: #ffffff;
+}
+
+
+/* ----------- ACCUEIL ----------- */
+
+#titre3 {
+    font-family: '212 Leahlee Sans';
+    color: #ffffff;
+    text-align: center;
+    font-size: 100px;
+}
+
+#titre4 {
+    font-family: '212 Leahlee Sans';
+    color: #ffffff;
+    text-align: center;
+    font-size: 60px;
+    margin-top: -50px;
+}
+
+
+/* ----------- TABLEAU ----------- */
+
+td,
+th {
+    border: 2px solid #5006B5;
+    padding: 12px;
+}
+
+td {
+    text-align: center;
+    font-size: 15px;
+    font-family: "Trebuchet MS";
+}
+
+tr:nth-child(even) {
+    background-color: rgba(233, 233, 233, 0.644);
+}
+
+th[colspan="2"] {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+th[colspan="5"] {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+th[colspan="6"] {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-family: "Trebuchet MS";
+    font-size: .8rem;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    background-color: #dfdfdfb7;
+}
+
+table[name=modif] {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .0.5rem;
+    margin: auto;
+    position: relative;
+    top: 8px;
+    background-color: #dfdfdf79;
+}
+
+table[name=delete] {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .2rem;
+    margin: auto;
+    position: relative;
+    top: 12px;
+    background-color: #dfdfdf79;
+}
+
+table[name=addCongressiste] {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-family: "Trebuchet MS";
+    font-size: .8rem;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    background-color: #dfdfdfb7;
+}
+
+table[name=supCongressiste] {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-family: "Trebuchet MS";
+    font-size: .8rem;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    background-color: #dfdfdfb7;
+}
+
+
+/* ----------- CHAMPS A REMPLIR ----------- */
+
+input[type=date],
+[type=time],
+[type=number],
+[type=text] {
+    font-weight: bold;
+    width: 60%;
+    padding: 13px 10px;
+    margin: 9px 0;
+    display: inline-block;
+    border: 2px solid #0000;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS";
+    border-radius: 5px;
+}
+
+.form-container input[type=text] {
+    width: 93%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: rgb(218, 216, 216);
+}
+
+.form-container input[type=date] {
+    width: 93%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: rgb(218, 216, 216);
+}
+
+.form-container input[type=time] {
+    width: 93%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: rgb(218, 216, 216);
+}
+
+.form-container input[type=number] {
+    width: 93%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: rgb(218, 216, 216);
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=date]:focus,
+.form-container input[type=time]:focus,
+.form-container input[type=number]:focus {
+    background-color: #eee;
+    outline: none;
+}
+
+input[name=datesession],
+[name=heuresession],
+[name=prixsession],
+[name=nomsession] {
+    font-weight: bold;
+    width: 60%;
+    padding: 13px 10px;
+    margin: 8px 9px;
+    display: inline-block;
+    border: 2px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-family: "Trebuchet MS";
+    border-radius: 5px;
+}
+
+.form-containermodif input[name=datesession] {
+    width: 40%;
+    padding: 15px;
+    margin: 7px 10 22px 0;
+    border: none;
+    background: #eee;
+}
+
+.form-containermodif input[name=heuresession] {
+    width: 40%;
+    padding: 15px;
+    margin: 7px 10 22px 0;
+    border: none;
+    background: #eee;
+}
+
+.form-containermodif input[name=prixsession] {
+    width: 40%;
+    padding: 15px;
+    margin: 7px 10 22px 0;
+    border: none;
+    background: #eee;
+}
+
+.form-containermodif input[name=nomsession] {
+    width: 40%;
+    padding: 15px;
+    margin: 7px 10 22px 0;
+    border: none;
+    background: #eee;
+}
+
+.form-containermodif input[name=datesession]:focus,
+.form-containermodif input[name=heuresession]:focus,
+.form-containermodif input[name=prixsession]:focus,
+.form-containermodif input[name=nomsession]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* ----------- FORME/EMPLACEMENT POPUP ----------- */
+
+.form-container {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+form[name=modif] {
+    width: 800px;
+    height: 700px;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid black;
+    border-radius: 50px;
+    filter: grayscale(0px);
+}
+
+form[name=delete] {
+    width: 800px;
+    height: 700px;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid black;
+    border-radius: 50px;
+    filter: grayscale(0px);
+}
+
+form[name=addCongressiste] {
+    width: 550px;
+    height: 610px;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+form[name=supCongressiste] {
+    width: 550px;
+    height: 550px;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+
+/* ----------- ESPACEMENT ----------- */
+
+div [class=container1] {
+    position: relative;
+    top: 30px;
+}
+
+
+/* ----------- POPUP ----------- */
+
+.session {
+    filter: grayscale(0px);
+}
+
+.background {
+    position: absolute;
+    width: 98%;
+    filter: grayscale(0px);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.open-button {
+    background: linear-gradient(to right, #4B06AE, #8F09B6, #9465b6);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+    position: relative;
+    left: 40%;
+    top: 120px;
+    text-align: center;
+    width: 20%;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.login-popup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 49%;
+    top: 15%;
+    transform: translate(-45%, 5%);
+    filter: grayscale(0px);
+}
+
+.form-popup1 {
+    display: none;
+    position: fixed;
+    left: 30%;
+    bottom: 10%;
+    transform: translate(-45%, 5%);
+    filter: grayscale(0px);
+}
+
+.form-popup2 {
+    display: none;
+    position: fixed;
+    left: 49%;
+    bottom: 8%;
+    transform: translate(-45%, 5%);
+    filter: grayscale(0px);
+}
+
+.form-popup3 {
+    display: none;
+    position: fixed;
+    left: 80%;
+    top: 15%;
+    transform: translate(-45%, 5%);
+    filter: grayscale(0px);
+}
+
+.form-popup4 {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 12%;
+    transform: translate(-45%, 5%);
+    filter: grayscale(0px);
+}
+
+.form-popup5 {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translate(-45%, 5%);
+    filter: grayscale(0px);
+}
+
+
+/* ----------- BOUTONS ----------- */
+
+.form-container .btn {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+input[value=Supprimer] {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    background: linear-gradient(to right, #4B06AE, #8F09B6, #9465b6);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 40%;
+    margin-bottom: 10px;
+    position: relative;
+    top: 40px;
+    opacity: 0.8;
+}
+
+input[value=Modifier] {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    background: linear-gradient(to right, #4B06AE, #8F09B6, #9465b6);
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
+    top: 20px;
+    opacity: 0.8;
+}
+
+input[value=Afficher] {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    background: linear-gradient(to right, #4B06AE, #8F09B6, #9465b6);
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 42%;
+    margin-bottom: 10px;
+    position: relative;
+    top: 40px;
+    left: 1px;
+    opacity: 0.8;
+}
+
+input[value=Enregistrer] {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    background: linear-gradient(to right, #4B06AE, #8F09B6, #9465b6);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+input[type=button] {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    background: linear-gradient(to right, #4B06AE, #8F09B6, #9465b6);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+input[name=fermer] {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    background: linear-gradient(to right, #4B06AE, #8F09B6, #9465b6);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 40%;
+    margin-bottom: 10px;
+    position: relative;
+    top: 40px;
+    opacity: 0.8;
+}
+
+input[value=Inscription] {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    background: linear-gradient(to right, #4B06AE, #8F09B6, #9465b6);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+input[value=Fermer] {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    background: linear-gradient(to right, #4B06AE, #8F09B6, #9465b6);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 40%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+input[value=Suppression] {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    background: linear-gradient(to right, #4B06AE, #8F09B6, #9465b6);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+#fermer a {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    background: linear-gradient(to right, #4B06AE, #8F09B6, #9465b6);
+    color: #fff;
+    padding: 12px 100px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+h1 {
+    color: #552992;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Trebuchet MS";
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Evolve';
+}
+
+p[class=style_css] {
+    font-family: "Trebuchet MS";
+    position: absolute;
+    left: 20px;
+    top: 71px;
+    width: auto;
+    color: #ffffff;
+    font-size: 18px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(167, 44, 44);
+    border-radius: 50px;
+    padding: 12px 40px;
+    transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(-11deg);
+    -khtml-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+}
